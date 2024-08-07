@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.layouts {
+    width: 100%;
+}
+
+.layout-container {
+    display: flex;
+    justify-content: space-evenly; 
+   
+}
+
+.template-layout,
+.flexbox-layout,
+.grid-layout {
+    width: 30%;
+}
+
+.subheading {
+    color:black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    border: 3px solid #000;
+    padding: 10px;
+}
+
+.box {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    grid-column: span 2;
+}
+
+.left {
+    grid-row: span 2;
+}
+
+.main {
+    grid-column: span 2;
+}
+
+.footer {
+    grid-column: span 2;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid green;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.flex-box {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+}
+
+.flex-container .header,
+.flex-container .main,
+.flex-container .footer {
+    width: 100%;
+}
+
+.flex-container .content {
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+}
+
+.flex-container .left {
+    width: 40%;
+    height: 180px; 
+   margin-right: 10px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(60% - 10px);
+    gap: 10px; 
+}
+
+.flex-container .right-top,
+.flex-container .right-bottom {
+    height: 90px;
+    width: 100%;
+}
+
+.grid-container {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    border: 3px solid red;
+    padding: 10px;
+}
+
+.grid-box {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-container .header {
+    grid-column: span 2;
+}
+
+.grid-container .article {
+    grid-row: span 2;
+}
+
+.grid-container .text1,
+.grid-container .text2 {
+    grid-column: span 1;
+}
+
+.grid-container .main {
+    grid-column: span 2;
+}
+
+.grid-container .footer {
+    grid-column: span 2;
+}                                                        
